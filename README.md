@@ -54,7 +54,9 @@ In the Airflow UI, navigate to Admin -> Variables and set the following variable
 This Airflow DAG defines the IMDb data pipeline. It consists of the following tasks:
 
 ***File Sensor Tasks:*** Check if the required files exist.
+
 ***Transform Task:*** Transform the data from TSV to Parquet format.
+
 ***Load Task:*** Load the transformed data into a database.
 
 
