@@ -52,6 +52,7 @@ In the Airflow UI, navigate to Admin -> Variables and set the following variable
 ### Airflow DAG: imdb_data_pipeline.py
 
 This Airflow DAG defines the IMDb data pipeline. It consists of the following tasks:
+![img.png](img.png)
 
 ***File Sensor Tasks:*** Check if the required files exist.
 

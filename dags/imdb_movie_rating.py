@@ -33,7 +33,7 @@ with dag:
 
     # Sensor task to check if the file exists
     title_file_sensor_task = FileSensor(
-        task_id='file_sensor_task',
+        task_id='title_file_sensor_task',
         filepath=INPUT_PATH + "title.basics.sample.tsv",
         fs_conn_id='fs_default',
         poke_interval=30,
@@ -42,7 +42,7 @@ with dag:
     )
 
     ratings_file_sensor_task = FileSensor(
-        task_id='file_sensor_task',
+        task_id='ratings_file_sensor_task',
         filepath=INPUT_PATH + "title.ratings.sample.tsv",
         fs_conn_id='fs_default',
         poke_interval=30,
@@ -51,7 +51,7 @@ with dag:
     )
 
     principals_file_sensor_task = FileSensor(
-        task_id='file_sensor_task',
+        task_id='principals_file_sensor_task',
         filepath=INPUT_PATH + "title.principals.sample.tsv",
         fs_conn_id='fs_default',
         poke_interval=30,
@@ -60,7 +60,7 @@ with dag:
     )
 
     name_file_sensor_task = FileSensor(
-        task_id='file_sensor_task',
+        task_id='name_file_sensor_task',
         filepath=INPUT_PATH + "name.basics.sample.tsv",
         fs_conn_id='fs_default',
         poke_interval=30,
